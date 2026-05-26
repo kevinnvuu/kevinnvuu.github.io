@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Harmoni – Kevin Vu</title>
+
+    <style>
+
+        .project-page {
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5rem 1.5rem 4rem;
+        }
+
+        .project-page__back {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--first-color);
+            font-size: var(--normal-font-size);
+            font-weight: var(--font-semi);
+            margin-bottom: 2rem;
+            transition: gap 0.2s;
+        }
+
+        .project-page__back:hover {
+            gap: 10px;
+        }
+
+        /* HERO SECTION */
+
+        .figma-hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 4rem;
+            padding: 3rem 0 5rem;
+        }
+
+        .figma-hero__content {
+            flex: 1;
+        }
+
+.figma-hero__title {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--first-color);
+    margin-bottom: 1rem;
+}
+
+.figma-hero__subtitle {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 500px;
+    margin-bottom: 2rem;
+    color: var(--second-color);
+}
+
+.figma-hero__button {
+    display: inline-block;
+    background: var(--first-color);
+    color: #fff;
+    padding: 1rem 2.5rem;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.figma-hero__button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+        .figma-hero__button:hover {
+            background: #084c91;
+            transform: translateY(-2px);
+        }
+
+        .figma-hero__images {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .figma-hero__images img {
+            width: 100%;
+            max-width: 520px;
+        }
+
+        /* CONTENT */
+
+        .project-page__section {
+            margin-bottom: 5rem;
+        }
+
+        .project-page__section-title {
+            font-size: 0.9rem;
+            color: var(--first-color);
+            font-weight: var(--font-semi);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .project-page__text {
+            color: var(--second-color);
+            line-height: 1.9;
+            font-size: 1rem;
+        }
+
+        /* PROTOTYPE GALLERY */
+
+        .prototype-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .prototype-gallery img {
+            width: 100%;
+            border-radius: 1rem;
+            box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.12);
+            transition: transform 0.3s ease;
+        }
+
+        .prototype-gallery img:hover {
+            transform: translateY(-5px);
+        }
+
+        /* MOBILE */
+
+        @media screen and (max-width: 768px) {
+
+            .figma-hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .figma-hero__title {
+                font-size: 3rem;
+            }
+
+            .figma-hero__subtitle {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="l-header">
+
+        <nav class="nav bd-grid">
+
+            <div>
+                <a href="../index.html" class="nav__logo">KEVIN VU</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="../index.html#home" class="nav__link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../index.html#about" class="nav__link">About</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../index.html#skills" class="nav__link">Skills</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../index.html#work" class="nav__link active-link">Projects</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../index.html#contact" class="nav__link">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- MAIN -->
+
+    <main class="l-main">
+
+        <div class="project-page">
+
+            <a href="../index.html#work" class="project-page__back">
+                <i class='bx bx-arrow-back'></i> Back to homepage
+            </a>
+
+            <!-- HERO -->
+
+            <section class="figma-hero">
+
+                <div class="figma-hero__content">
+
+                    <h1 class="figma-hero__title">
+                        Harmoni
+                    </h1>
+
+                    <p class="figma-hero__subtitle">
+                        A digital app focused on self-care, emotional support, and accessible mental health resources.
+                    </p>
+
+                    <a href="https://www.figma.com/design/bPH9Iw8WCGkhd2K7J13m7w/Harmoni?node-id=770-1244&p=f&t=iEvq7tAeY4GT65wI-0"
+                       target="_blank"
+                       class="figma-hero__button">
+
+                        View Full Figma Prototype
+
+                    </a>
+
+                </div>
+
+                <div class="figma-hero__images">
+
+                    <img src="../assets/img/harmoni-mockups.png"
+                         alt="Harmoni mockup">
+
+                </div>
+
+            </section>
+
+            <div class="project-page__section">
+
+    <div class="project-info">
+
+        <div class="project-info__card">
+
+            <h3 class="project-info__title">
+                Role
+            </h3>
+
+            <p class="project-info__text">
+                UX/UI Designer
+            </p>
+
+        </div>
+
+        <div class="project-info__card">
+
+            <h3 class="project-info__title">
+                Tools
+            </h3>
+
+            <p class="project-info__text">
+                Figma, Miro, Illustrator
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+            <!-- OVERVIEW -->
+
+            <div class="project-page__section">
+
+                <h2 class="project-page__section-title">
+                    Overview
+                </h2>
+
+                <p class="project-page__text">
+Harmoni is a mobile app designed to support young adults experiencing mild to moderate mental health challenges. The app provides accessible self-care tools, emotional support, and resources in a safe and user-friendly environment. The solution focused on reducing stigma around mental health through user-centered design and iterative prototyping.
+                </p>
+
+            </div>
+
+            <!-- THE PROBLEM -->
+
+            <div class="project-page__section">
+
+                <h2 class="project-page__section-title">
+                    The Problem
+                </h2>
+
+                <p class="project-page__text">
+Many young adults struggle to seek help for mental health challenges due to stigma, lack of accessible support, or uncertainty about where to start. Existing solutions can often feel overwhelming, impersonal, or difficult to navigate. The goal of Harmoni was to create a safe and approachable platform that encourages self-care, emotional reflection, and support for both users and their friends.
+                </p>
+
+            </div>
+
+            <!-- PROCESS -->
+
+            <div class="project-page__section">
+
+                <h2 class="project-page__section-title">
+                    Process
+                </h2>
+
+                <p class="project-page__text">
+
+The project followed an iterative and user-centered design process focused on accessibility, emotional safety, and usability. Through research and analysis, we identified key challenges related to mental health support, including the need for low-threshold guidance and easier ways to support friends experiencing emotional difficulties.
+                    <br><br>
+
+Based on these insights, we developed conceptual models, information architecture, and wireframes in Figma to explore navigation, structure, and user flows. The design process emphasized simplicity, clarity, and emotional comfort through calm visuals and intuitive interactions.
+                    <br><br>
+
+We also conducted usability testing with participants of different ages and technical backgrounds to evaluate navigation, functionality, and overall user experience. Feedback from testing led to several improvements, including clearer onboarding, better navigation, increased whitespace, and more intuitive placement of key features.
+    
+                </p>
+
+            </div>
+
+            <!-- PROTOTYPE SECTION -->
+
+            <div class="project-page__section">
+
+                <h2 class="project-page__section-title">
+                    Prototype Screenshots
+                </h2>
+
+                <p class="project-page__text">
+
+                    Selected screens from the Harmoni prototype showcasing onboarding, emotional support tools, mood tracking, and mental health resources.
+
+                </p>
+
+                <div class="prototype-gallery">
+
+                    <img src="../assets/img/HarmoniShowCase.png"
+                         alt="Harmoni prototype screen">
+
+                </div>
+
+            </div>
+
+            <!-- RESULT -->
+
+            <div class="project-page__section">
+
+                <h2 class="project-page__section-title">
+                    Result
+                </h2>
+
+                <p class="project-page__text">
+
+The final prototype combined self-care tools, social support features, and access to mental health resources into one cohesive and supportive experience. Users found the solution intuitive, calming, and easy to navigate, while usability testing highlighted the importance of accessibility and emotional clarity in sensitive digital products.
+                    <br><br>
+
+Through this project, I gained valuable experience designing for mental health and accessibility, while strengthening my skills in user research, prototyping, usability testing, and iterative UX/UI design.
+                    <br><br>
+
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <p class="footer__title">
+            Kevin Vu
+        </p>
+
+        <div class="footer__social">
+
+            <p class="connect-text">
+                Connect with me on LinkedIn
+            </p>
+
+            <a href="https://www.linkedin.com/in/kevin-vu-94735a266"
+               target="_blank"
+               class="linkedin-icon">
+
+                <i class='bx bxl-linkedin'></i>
+
+            </a>
+
+        </div>
+
+        <p class="footer__copy">
+            &#169; Kevin Vu. All rights reserved
+        </p>
+
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+</html>

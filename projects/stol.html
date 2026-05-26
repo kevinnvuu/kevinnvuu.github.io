@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>STOL – Kevin Vu</title>
+
+    <style>
+
+        .project-page {
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5rem 1.5rem 4rem;
+        }
+
+        .project-page__back {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--first-color);
+            font-size: var(--normal-font-size);
+            font-weight: var(--font-semi);
+            margin-bottom: 2rem;
+            transition: gap 0.2s;
+        }
+
+        .project-page__back:hover {
+            gap: 10px;
+        }
+
+        /* HERO SECTION */
+
+        .figma-hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 4rem;
+            padding: 3rem 0 5rem;
+        }
+
+        .figma-hero__content {
+            flex: 1;
+        }
+
+        .figma-hero__title {
+            font-size: 4rem;
+            font-weight: 600;
+color: var(--first-color);            
+margin-bottom: 1rem;
+        }
+
+        .figma-hero__subtitle {
+            font-size: 1.1rem;
+            color: #000000;
+            line-height: 1.8;
+            max-width: 500px;
+            margin-bottom: 2rem;
+        }
+
+        .figma-hero__button {
+            display: inline-block;
+            background: var(--first-color);
+            color: #fff;
+            padding: 1rem 2.5rem;
+            border-radius: 999px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .figma-hero__button:hover {
+            background: #084c91;
+            transform: translateY(-2px);
+        }
+
+        .figma-hero__images {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .figma-hero__images img {
+            width: 100%;
+            max-width: 520px;
+        }
+
+        /* CONTENT */
+
+        .project-page__section {
+            margin-bottom: 5rem;
+        }
+
+        .project-page__section-title {
+            font-size: 0.9rem;
+            color: var(--first-color);
+            font-weight: var(--font-semi);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .project-page__text {
+            color: var(--second-color);
+            line-height: 1.9;
+            font-size: 1rem;
+        }
+
+        /* INFO GRID */
+
+        .project-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-info__card {
+            padding: 1.5rem;
+            border-radius: 1rem;
+            background: #f8f9fb;
+            box-shadow: 0px 4px 20px rgba(14, 36, 49, 0.08);
+        }
+
+        .project-info__title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            color: var(--first-color);
+            margin-bottom: 0.8rem;
+            letter-spacing: 1px;
+        }
+
+        .project-info__text {
+            line-height: 1.8;
+            color: var(--second-color);
+        }
+
+        /* PROTOTYPE GALLERY */
+
+        .prototype-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .prototype-gallery img {
+            width: 100%;
+            border-radius: 1rem;
+            box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.12);
+            transition: transform 0.3s ease;
+        }
+
+        .prototype-gallery img:hover {
+            transform: translateY(-5px);
+        }
+
+        /* FEATURE LIST */
+
+        .feature-list {
+            margin-top: 1.5rem;
+            padding-left: 1.2rem;
+        }
+
+        .feature-list li {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            color: var(--second-color);
+        }
+
+        /* MOBILE */
+
+        @media screen and (max-width: 768px) {
+
+            .figma-hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .figma-hero__title {
+                font-size: 3rem;
+            }
+
+            .figma-hero__subtitle {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="l-header">
+
+        <nav class="nav bd-grid">
+
+            <div>
+                <a href="../index.html" class="nav__logo">KEVIN VU</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="../index.html#home" class="nav__link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../index.html#about" class="nav__link">About</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../index.html#skills" class="nav__link">Skills</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../index.html#work" class="nav__link active-link">Projects</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../index.html#contact" class="nav__link">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- MAIN -->
+
+    <main class="l-main">
+
+        <div class="project-page">
+
+            <a href="../index.html#work" class="project-page__back">
+                <i class='bx bx-arrow-back'></i> Back to homepage
+            </a>
+
+            <!-- HERO -->
+
+            <section class="figma-hero">
+
+                <div class="figma-hero__content">
+
+                    <h1 class="figma-hero__title">
+                        STOL
+                    </h1>
+
+                    <p class="figma-hero__subtitle">
+                        A mobile app prototype that combines affordability, trust, and sustainability by giving students a safe and professional platform to browse and purchase both new and second-hand furniture.
+                    </p>
+
+                    <a href="https://www.figma.com/design/O2t7o0PFWJYxYQTJPXSwvV/STOL?node-id=0-1&p=f&t=SaPPbbKOJyp8HKn3-0"
+                       target="_blank"
+                       class="figma-hero__button">
+
+                        View Full Figma Prototype
+                    </a>
+
+                </div>
+
+                <div class="figma-hero__images">
+
+                    <img src="../assets/img/stol.png"
+                         alt="Project mockup">
+
+                </div>
+
+            </section>
+     <!-- PROJECT INFO -->
+
+<div class="project-page__section">
+
+    <div class="project-info">
+
+        <div class="project-info__card">
+
+            <h3 class="project-info__title">
+                Role
+            </h3>
+
+            <p class="project-info__text">
+                Project leader and UX/UI Designer
+            </p>
+
+        </div>
+
+        <div class="project-info__card">
+
+            <h3 class="project-info__title">
+                Tools
+            </h3>
+
+            <p class="project-info__text">
+                Figma, Illustrator
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+            <!-- OVERVIEW -->
+
+            <div class="project-page__section">
+
+                <h2 class="project-page__section-title">
+                    Overview
+                </h2>
+
+                <p class="project-page__text">
+
+           STOL is a concept mobile app created for the furniture company STOL, developed as part of a UX/UI and service design project. The goal of the project was to explore how STOL could introduce a more sustainable business model focused on reused furniture for students in Oslo. The solution was designed to make second-hand furniture shopping safer, simpler, and more accessible through a professional digital platform.
+                <br><br>
+                The project focused on user research, information architecture, wireframing, and interactive prototyping in Figma. The final concept combined sustainability, affordability, and trust into one cohesive user experience.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- THE PROBLEM -->
+
+            <div class="project-page__section">
+
+                <h2 class="project-page__section-title">
+                    The Problem
+                </h2>
+
+                <p class="project-page__text">
+
+                    Many students in Oslo live on limited budgets and struggle to find affordable furniture of good quality. While platforms such as Finn.no, Facebook Marketplace, and Tise already offer second-hand products, students often experience uncertainty related to product quality, unreliable sellers, and complicated pickup or payment processes.
+                                    <br><br>
+The challenge was to explore whether there is a market for a safer and more professional second-hand furniture experience specifically designed for students. STOL wanted a solution that could combine sustainability with a trustworthy and user-friendly buying experience.
+                </p>
+
+            </div>
+
+            <!-- PROCESS -->
+
+            <div class="project-page__section">
+
+                <h2 class="project-page__section-title">
+                    Process
+                </h2>
+
+                <p class="project-page__text">
+The project followed a user-centered and iterative design process consisting of research, analysis, concept development, prototyping, and usability testing.
+<br><br>
+
+We began by conducting market analysis and examining existing platforms such as Finn.no, Facebook Marketplace, and Tise to identify strengths, weaknesses, and opportunities for differentiation. Research showed that students valued affordability and sustainability but lacked trust in existing second-hand marketplaces.
+<br><br>
+
+To better understand user needs and motivations, we conducted both quantitative and qualitative research methods, including surveys and interviews with students in Oslo. The findings revealed a strong interest in reused furniture, but also highlighted concerns related to safety, quality assurance, and ease of use.
+<br><br>
+
+Based on the insights, we developed personas, user flows, conceptual models, and low-fidelity wireframes in Figma. The design process focused on creating a clean and intuitive interface tailored toward students, with simple navigation and a clear structure.
+<br><br>
+
+The final stage included the development of a high-fidelity interactive prototype and usability testing with users performing task-based scenarios such as browsing reused furniture, viewing products, and using the reward system. Feedback from testing helped improve navigation clarity and feature discoverability.
+                </p>
+
+            </div>
+
+            <!-- PROTOTYPE SECTION -->
+
+            <div class="project-page__section">
+
+                <h2 class="project-page__section-title">
+                    Prototype Screenshots
+                </h2>
+
+                <p class="project-page__text">
+
+                    Selected screens showcasing different parts of the project and user flow.
+
+                </p>
+
+                <div class="prototype-gallery">
+
+                    <img src="../assets/img/stol1.png"
+                         alt="Prototype screen">
+
+                    <img src="../assets/img/stol2.png"
+                         alt="Prototype screen">
+
+                    <img src="../assets/img/stol3.png"
+                         alt="Prototype screen">
+
+                                   <img src="../assets/img/stol4.png"
+                         alt="Prototype screen">
+
+                </div>
+
+            </div>
+
+            <!-- RESULT -->
+
+            <div class="project-page__section">
+
+                <h2 class="project-page__section-title">
+                    Result
+                </h2>
+
+                <p class="project-page__text">
+
+     The final solution was a prototype of a professional marketplace app where students could safely browse and purchase both new and reused furniture through STOL. The concept focused on affordability, sustainability, and trust by offering quality-checked furniture in a modern and easy-to-use platform.
+<br><br>
+
+The prototype included features such as product browsing, category navigation, reward scanning for points, and a dedicated section for reused furniture. User testing showed that participants appreciated the professional appearance, simple navigation, and the idea of a trusted second-hand marketplace designed specifically for students.
+<br><br>
+
+Through this project, I gained valuable experience in user research, service design, prototyping, usability testing, and designing digital solutions based on real user insights and sustainability-focused business goals.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <p class="footer__title">
+            Kevin Vu
+        </p>
+
+        <div class="footer__social">
+
+            <p class="connect-text">
+                Connect with me on LinkedIn
+            </p>
+
+            <a href="https://www.linkedin.com/in/kevin-vu-94735a266"
+               target="_blank"
+               class="linkedin-icon">
+
+                <i class='bx bxl-linkedin'></i>
+
+            </a>
+
+        </div>
+
+        <p class="footer__copy">
+            &#169; Kevin Vu. All rights reserved
+        </p>
+
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Fashion Days – Kevin Vu</title>
+
+    <style>
+
+        .project-page {
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5rem 1.5rem 4rem;
+        }
+
+        .project-page__back {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--first-color);
+            font-size: var(--normal-font-size);
+            font-weight: var(--font-semi);
+            margin-bottom: 2rem;
+            transition: gap 0.2s;
+        }
+
+        .project-page__back:hover {
+            gap: 10px;
+        }
+
+        /* HERO */
+
+        .figma-hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 4rem;
+            padding: 3rem 0 5rem;
+        }
+
+        .figma-hero__content {
+            flex: 1;
+        }
+
+.figma-hero__title {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--first-color);
+    margin-bottom: 1rem;
+}
+
+.figma-hero__subtitle {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 500px;
+    margin-bottom: 2rem;
+    color: var(--second-color);
+}
+
+.figma-hero__button {
+    display: inline-block;
+    background: var(--first-color);
+    color: #fff;
+    padding: 1rem 2.5rem;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.figma-hero__button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+        .figma-hero__button:hover {
+            background: #0073b1;
+            transform: translateY(-2px);
+        }
+
+        .figma-hero__images {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .figma-hero__images img {
+            width: 100%;
+            max-width: 520px;
+        }
+
+        /* CONTENT */
+
+        .project-page__section {
+            margin-bottom: 5rem;
+        }
+
+        .project-page__section-title {
+            font-size: 0.9rem;
+            color: var(--first-color);
+            font-weight: var(--font-semi);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .project-page__text {
+            color: var(--second-color);
+            line-height: 1.9;
+            font-size: 1rem;
+        }
+
+        /* GALLERY */
+
+        .prototype-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .prototype-gallery img {
+            width: 100%;
+            border-radius: 1rem;
+            box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.12);
+            transition: transform 0.3s ease;
+        }
+
+        .prototype-gallery img:hover {
+            transform: translateY(-5px);
+        }
+
+        /* COLOR PALETTE */
+
+        .color-palette {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .color-box {
+            width: 140px;
+            height: 140px;
+            border-radius: 1rem;
+            display: flex;
+            align-items: end;
+            padding: 1rem;
+            color: #fff;
+            font-weight: 600;
+            box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.1);
+        }
+
+        /* MOBILE */
+
+        @media screen and (max-width: 768px) {
+
+            .figma-hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .figma-hero__title {
+                font-size: 3rem;
+            }
+
+            .figma-hero__subtitle {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+
+        /* LOGO SECTION */
+
+.logo-showcase{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.08);
+}
+
+.logo-showcase img{
+    max-width: 700px;
+    width: 100%;
+    object-fit: contain;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="l-header">
+
+        <nav class="nav bd-grid">
+
+            <div>
+                <a href="../index.html" class="nav__logo">KEVIN VU</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="../index.html#home" class="nav__link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../index.html#about" class="nav__link">About</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../index.html#skills" class="nav__link">Skills</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../index.html#work" class="nav__link active-link">Projects</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../index.html#contact" class="nav__link">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- MAIN -->
+
+    <main class="l-main">
+
+        <div class="project-page">
+
+            <a href="../index.html#work" class="project-page__back">
+                <i class='bx bx-arrow-back'></i> Back to homepage
+            </a>
+
+            <!-- HERO -->
+
+            <section class="figma-hero">
+
+                <div class="figma-hero__content">
+
+                    <h1 class="figma-hero__title">
+                        Fashion Days
+                    </h1>
+
+                    <p class="figma-hero__subtitle">
+                        A complete visual identity and profile manual created for a fictional fashion event.
+                    </p>
+
+                    <a href="../assets/img/Profilmanual.pdf"
+                       target="_blank"
+                       class="figma-hero__button">
+
+                        View Full Profile Manual
+
+                    </a>
+
+                </div>
+
+                <div class="figma-hero__images">
+
+                    <img src="../assets/img/Plakat.png"
+                         alt="Fashion Days mockup">
+
+                </div>
+
+            </section>
+
+            <!-- OVERVIEW -->
+
+            <div class="project-page__section">
+
+                <h2 class="project-page__section-title">
+                    Overview
+                </h2>
+
+                <p class="project-page__text">
+
+                    Fashion Days is a branding and visual identity project developed as part of a design assignment focused on profile design and brand consistency. The goal of the project was to create a complete profile manual for a fictional fashion event, including logo systems, typography, color palette, and promotional materials.
+
+                    <br><br>
+
+                    The project focused on creating a modern and recognizable visual identity that could work consistently across both digital and physical platforms. The final deliverable included a complete profile handbook with guidelines for logo usage, typography, colors, posters, tickets, brochures, and advertising materials.
+
+                    <br><br>
+
+                    Throughout the project, I worked with visual identity design, layout, typography, branding systems, and mockup presentation in Adobe design tools.
+
+                </p>
+
+            </div>
+
+            <!-- CHALLENGE -->
+
+            <div class="project-page__section">
+
+                <h2 class="project-page__section-title">
+                    The Challenge
+                </h2>
+
+                <p class="project-page__text">
+
+                    The challenge was to design a cohesive and professional visual identity for a fashion event that would feel modern, elegant, and visually engaging. The identity needed to work across multiple formats and maintain consistency regardless of platform or medium.
+
+                    <br><br>
+
+                    Another important goal was to create a flexible branding system with clear guidelines for logo usage, typography hierarchy, and color combinations to ensure a recognizable and professional appearance throughout all promotional materials.
+
+                </p>
+
+            </div>
+
+            <!-- LOGO SECTION -->
+
+<div class="project-page__section">
+
+    <h2 class="project-page__section-title">
+        Logo Design
+    </h2>
+
+    <p class="project-page__text">
+
+        The logo was developed as a central part of the visual identity for the event. 
+        The design combines a modern and clean expression with strong visual recognition, 
+        making it adaptable across both digital and printed surfaces.
+
+        <br><br>
+
+        The goal was to create a logo that reflects the atmosphere, energy, and identity 
+        of the event while maintaining simplicity and scalability across different applications.
+
+    </p>
+
+    <div class="logo-showcase">
+
+        <img src="../assets/img/logo.png"
+             alt="Event logo">
+
+    </div>
+
+</div>
+
+            <!-- BRAND IDENTITY -->
+
+            <div class="project-page__section">
+
+                <h2 class="project-page__section-title">
+                    Brand Identity
+                </h2>
+
+                <p class="project-page__text">
+
+                    The visual identity was built around a clean and modern logo system consisting of both primary and secondary logo variations. Different color versions were developed to ensure flexibility across light and dark backgrounds while maintaining readability and consistency.
+
+                    <br><br>
+
+                    Mockups were used throughout the process to test how the branding system performed across realistic applications such as posters, brochures, and promotional assets.
+
+                </p>
+
+                <div class="prototype-gallery">
+
+                    <img src="../assets/img/fashion-logo1.png" alt="">
+                    <img src="../assets/img/fashion-logo2.png" alt="">
+                    <img src="../assets/img/fashion-mockup1.png" alt="">
+
+                </div>
+
+            </div>
+
+            <!-- COLOR SYSTEM -->
+
+            <div class="project-page__section">
+
+                <h2 class="project-page__section-title">
+                    Brand colors
+                </h2>
+
+                <p class="project-page__text">
+
+                    The color palette was carefully designed to create a professional and recognizable identity. The system consists of one primary color supported by complementary accent colors that provide flexibility while maintaining visual consistency.
+
+                </p>
+
+                <div class="color-palette">
+
+                    <div class="color-box" style="background:#487687;">
+                        #487687
+                    </div>
+
+                    <div class="color-box" style="background:#74C1FC;">
+                        #74C1FC
+                    </div>
+
+                    <div class="color-box" style="background:#29235C;">
+                        #29235C
+                    </div>
+
+                    <div class="color-box" style="background:#9193CB;">
+                        #9193CB
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- TYPOGRAPHY -->
+
+            <div class="project-page__section">
+
+                <h2 class="project-page__section-title">
+                    Typography
+                </h2>
+
+                <p class="project-page__text">
+
+                    Typography played an important role in shaping the identity of Fashion Days. Myriad Pro was selected as the primary profile font due to its clean, modern, and highly readable appearance across both print and digital platforms.
+
+                    <br><br>
+
+                    To create stronger visual personality and contrast, the handwritten display font “Above The Beyond” was used selectively for decorative elements and highlighted text.
+
+                </p>
+
+                <div class="prototype-gallery">
+
+                    <img src="../assets/img/fashion-typography.png" alt="">
+                    <img src="../assets/img/fashion-fonts.png" alt="">
+
+                </div>
+
+            </div>
+
+            <!-- MARKETING MATERIAL -->
+
+            <div class="project-page__section">
+
+                <h2 class="project-page__section-title">
+                    Marketing Material
+                </h2>
+
+                <p class="project-page__text">
+
+                    The final profile manual included multiple promotional assets designed to showcase how the visual identity could be applied consistently across different formats.
+
+                    <br><br>
+
+                    This included advertisement posters, event tickets, brochure mockups, and social media inspired layouts. Each element followed the same branding guidelines to ensure consistency, readability, and strong visual recognition.
+
+                </p>
+
+                <div class="prototype-gallery">
+
+                    <img src="../assets/img/fashion-poster.png" alt="">
+                    <img src="../assets/img/fashion-ticket.png" alt="">
+                    <img src="../assets/img/fashion-brochure.png" alt="">
+                    <img src="../assets/img/fashion-ad.png" alt="">
+
+                </div>
+
+            </div>
+
+            <!-- RESULT -->
+
+            <div class="project-page__section">
+
+                <h2 class="project-page__section-title">
+                    Result
+                </h2>
+
+                <p class="project-page__text">
+
+                    The final result was a complete and cohesive profile manual that successfully established a strong visual identity for the fictional Fashion Days event.
+
+                    <br><br>
+
+                    The project strengthened my skills in branding, layout design, typography, visual systems, and presentation design. It also gave me valuable experience in building scalable design systems and understanding how consistent branding contributes to professional communication and user perception.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <p class="footer__title">
+            Kevin Vu
+        </p>
+
+        <div class="footer__social">
+
+            <p class="connect-text">
+                Connect with me on LinkedIn
+            </p>
+
+            <a href="https://www.linkedin.com/in/kevin-vu-94735a266"
+               target="_blank"
+               class="linkedin-icon">
+
+                <i class='bx bxl-linkedin'></i>
+
+            </a>
+
+        </div>
+
+        <p class="footer__copy">
+            &#169; Kevin Vu. All rights reserved
+        </p>
+
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+</html>

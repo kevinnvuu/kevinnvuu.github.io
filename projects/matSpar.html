@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>MatSpar – Kevin Vu</title>
+
+    <style>
+
+        .project-page {
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5rem 1.5rem 4rem;
+        }
+
+        .project-page__back {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--first-color);
+            font-size: var(--normal-font-size);
+            font-weight: var(--font-semi);
+            margin-bottom: 2rem;
+            transition: gap 0.2s;
+        }
+
+        .project-page__back:hover {
+            gap: 10px;
+        }
+
+        /* HERO SECTION */
+
+        .figma-hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 4rem;
+            padding: 3rem 0 5rem;
+        }
+
+        .figma-hero__content {
+            flex: 1;
+        }
+.figma-hero__title {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--first-color);
+    margin-bottom: 1rem;
+}
+
+.figma-hero__subtitle {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 500px;
+    margin-bottom: 2rem;
+    color: var(--second-color);
+}
+
+.figma-hero__button {
+    display: inline-block;
+    background: var(--first-color);
+    color: #fff;
+    padding: 1rem 2.5rem;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.figma-hero__button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+        .figma-hero__button:hover {
+            background: #979289;
+            transform: translateY(-2px);
+        }
+
+        .figma-hero__images {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .figma-hero__images img {
+            width: 100%;
+            max-width: 520px;
+        }
+
+        /* CONTENT */
+
+        .project-page__section {
+            margin-bottom: 4rem;
+        }
+
+        .project-page__section-title {
+            font-size: 0.9rem;
+            color: var(--first-color);
+            font-weight: var(--font-semi);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .project-page__text {
+            color: var(--second-color);
+            line-height: 1.9;
+            font-size: 1rem;
+
+
+            
+        }
+
+
+        /* PROTOTYPE GALLERY */
+
+.prototype-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.prototype-gallery img {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.prototype-gallery img:hover {
+    transform: translateY(-5px);
+}
+
+        /* MOBILE */
+
+        @media screen and (max-width: 768px) {
+
+            .figma-hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .figma-hero__title {
+                font-size: 3rem;
+            }
+
+            .figma-hero__subtitle {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="l-header">
+        <nav class="nav bd-grid">
+
+            <div>
+                <a href="../index.html" class="nav__logo">KEVIN VU</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="../index.html#home" class="nav__link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../index.html#about" class="nav__link">About</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../index.html#skills" class="nav__link">Skills</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../index.html#work" class="nav__link active-link">Projects</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../index.html#contact" class="nav__link">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+
+    <main class="l-main">
+
+        <div class="project-page">
+
+            <a href="../index.html#work" class="project-page__back">
+                <i class='bx bx-arrow-back'></i> Back to homepage
+            </a>
+
+            <!-- HERO -->
+
+            <section class="figma-hero">
+
+                <div class="figma-hero__content">
+
+                    <h1 class="figma-hero__title">
+                        MatSpar
+                    </h1>
+
+                    <p class="figma-hero__subtitle">
+                        A smart app for meal planning, budgeting, and reducing food waste.
+                    </p>
+
+                    <a href="https://www.figma.com/design/ObFSRwwNMJGFbuidoVTQcM/MatSpar?node-id=420-3691&p=f&t=5lQhtOKOs1v9aC7x-0/"
+                       target="_blank"
+                       class="figma-hero__button">
+
+                        View Full Figma Prototype
+
+                    </a>
+
+                </div>
+
+                <div class="figma-hero__images">
+
+                    <img src="../assets/img/matspar.png"
+                         alt="MatSpar mockup">
+
+                </div>
+
+            </section>
+
+            <div class="project-page__section">
+
+    <div class="project-info">
+
+        <div class="project-info__card">
+
+            <h3 class="project-info__title">
+                Role
+            </h3>
+
+            <p class="project-info__text">
+                Project leader and UX/UI Designer
+            </p>
+
+        </div>
+
+        <div class="project-info__card">
+
+            <h3 class="project-info__title">
+                Tools
+            </h3>
+
+            <p class="project-info__text">
+                Figma, Miro, Illustrator
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+            <!-- OVERVIEW -->
+
+            <div class="project-page__section">
+
+                <h2 class="project-page__section-title">
+                    Overview
+                </h2>
+
+                <p class="project-page__text">
+
+          MatSpar is a mobile app designed to help students and families manage meal planning, reduce food waste, and stay within their grocery budget. The app combines smart meal suggestions, automatic shopping lists, and budget tracking in one simple and user-friendly solution. This project was developed as part of an 8-week group project, where I focused on information architecture, wireframes, and interactive prototyping in Figma.
+
+            </div>
+
+            <!-- PROBLEM -->
+
+            <div class="project-page__section">
+
+                <h2 class="project-page__section-title">
+                    The Problem
+                </h2>
+
+                <p class="project-page__text">
+
+ Many students and families struggle to keep track of groceries, plan meals efficiently, and avoid unnecessary food waste. Existing solutions often focus only on recipes or shopping lists, making meal planning feel fragmented and time-consuming. The goal of MatSpar was to create a more seamless experience that helps users save money and simplify everyday food planning.
+                </p>
+
+            </div>
+
+            <!-- PROCESS -->
+
+            <div class="project-page__section">
+
+                <h2 class="project-page__section-title">
+                    Process
+                </h2>
+
+                <p class="project-page__text">
+
+The project followed a Lean UX and design thinking approach, combining user research, ideation, prototyping, and usability testing. We conducted semi-structured interviews to better understand users’ habits and frustrations around meal planning and grocery shopping.
+                    <br><br>
+
+Based on our findings, we developed low-fidelity wireframes and user flows in Figma to explore navigation and core features early in the process. After several iterations, we created an interactive prototype focused on simplicity, clear information hierarchy, and intuitive navigation.
+                    <br><br>
+
+We also conducted usability testing with five participants to evaluate the user experience and identify improvement areas. Insights from testing helped refine the shopping list flow, recipe customization, and the visibility of budget-saving features.
+                </p>
+
+            </div>
+
+            <!-- PROTOTYPE SECTION -->
+
+<div class="project-page__section">
+
+    <h2 class="project-page__section-title">
+        Prototype Screenshots
+    </h2>
+
+    <p class="project-page__text">
+
+        Selected screenshots from MatSpar showcasing meal planning, budget tracking, and grocery list interactions.
+
+    </p>
+
+    <div class="prototype-gallery">
+
+        <img src="../assets/img/MatSparScreens1.png"
+             alt="MatSpar prototype screen">
+
+        <img src="../assets/img/MatSparScreens2.png"
+             alt="MatSpar prototype screen">
+
+        <img src="../assets/img/MatSpar3.png"
+             alt="MatSpar prototype screen">
+
+
+    </div>
+
+</div>
+
+            <!-- RESULT -->
+
+            <div class="project-page__section">
+
+                <h2 class="project-page__section-title">
+                    Result
+                </h2>
+
+                <p class="project-page__text">
+
+The final solution combined meal planning, shopping lists, and budget management into one cohesive experience. User testing showed that participants found the app intuitive and especially appreciated the weekly meal overview and automatic shopping list features.
+                    <br><br>
+
+Through this project, I gained valuable experience in user-centered design, prototyping, usability testing, and iterative design processes. It also strengthened my ability to design clear and practical digital solutions based on real user needs.
+
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <p class="footer__title">
+            Kevin Vu
+        </p>
+
+        <div class="footer__social">
+
+            <p class="connect-text">
+                Connect with me on LinkedIn
+            </p>
+
+            <a href="https://www.linkedin.com/in/kevin-vu-94735a266"
+               target="_blank"
+               class="linkedin-icon">
+
+                <i class='bx bxl-linkedin'></i>
+
+            </a>
+
+        </div>
+
+        <p class="footer__copy">
+            &#169; Kevin Vu. All rights reserved
+        </p>
+
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+</html>
